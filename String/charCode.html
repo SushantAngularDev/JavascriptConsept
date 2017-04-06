@@ -3,10 +3,11 @@
 
 <body>
 	<p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
-	<p id="demo"></p>
+	<p id="demo">this is my world welcomes us...</p>
 	<script>
-		var str = "HELLO   WORLD";
-		document.getElementById("demo").innerHTML = str.charCodeAt(7);
+		var str1=document.getElementById("demo").innerHTML;
+		var positionStr=str1.charAt(0);
+		alert(positionStr);
 	</script>
 </body>
 
