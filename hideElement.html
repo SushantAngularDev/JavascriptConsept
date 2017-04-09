@@ -1,0 +1,51 @@
+<html>
+
+<head>
+	<!-- <style>
+        body{
+            background-color: red;
+        }
+        div > h1 {
+            background-color: black;
+			color: white;
+        }
+    </style> -->
+	<script src="jquery-3.1.0.js" ></script>
+</head>
+
+<body>
+	<h1>Excersize-1</h1>
+	<div>
+		<input type="button" name="hide" value="HideInputElement" onclick="hide()"/>
+		<h1 class="selected">div-1</h1>
+		<h1 class="selected">div-2</h1>
+
+		<!-- form start -->
+		<!--  hide all input element -->
+		<form id="main_form">
+			<p>
+				<label for="fname">First Name</label>
+				<input type="text" name="fname" />
+			</p>
+
+			<p>
+				<label for="lname">Last Name</label>
+				<input type="text" name="lname" />
+			</p>
+		</form>
+
+	</div>
+	<script>
+		// applying all h1 element that  are children to div element
+		$("div").children(".selected").css("background-color","yellow");
+		document.body.style.backgroundColor="red";
+		function hide(){
+			$("#main_form").hide();
+		}
+	
+	
+	</script>
+
+</body>
+
+</html>
